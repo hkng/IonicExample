@@ -1,0 +1,31 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>Person Detail</ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content class="persondetail">
+
+    <ion-card>
+        <ion-card-content>
+            <img src="{{person.picture.large}}" />
+            <h2>{{person.name.first}} {{person.name.last}}</h2>
+            <h3>{{person.gender}}</h3>
+        </ion-card-content>
+
+        <ion-list>
+            <a href="tel:{{person.cell}}" ion-item>
+                <ion-icon name="call" item-left></ion-icon>
+                <p>Call Mobile</p>
+                <h2>{{person.cell}}</h2>
+            </a>
+            <a href="mailto:{{person.email}}" ion-item>
+                <ion-icon name="mail" item-left></ion-icon>
+                <p>Email</p>
+                <h2>{{person.email}}</h2>
+            </a>
+        </ion-list>
+
+    </ion-card>
+
+</ion-content>
